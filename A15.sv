@@ -44,7 +44,7 @@ module tb;
   initial begin
     component = new("comp", null);
     component.set_report_max_quit_count(4);
-    component.set_report_severity_action(UVM_WARNING, UVM_COUNT);
+    component.set_report_severity_action(UVM_WARNING, UVM_DISPLAY|UVM_COUNT);
     component.run();
   end
   
